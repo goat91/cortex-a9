@@ -1,9 +1,11 @@
+#include "platform.h"
+
 ENTRY(_Reset)
 
 /* Specify the memory areas */
 MEMORY
 {
-    RAM (xrw)       : ORIGIN = 0x60000000, LENGTH = 100M /* 100MB */
+    RAM (xrw)       : ORIGIN = RAM_START, LENGTH = RAM_LEN
 
 }
 

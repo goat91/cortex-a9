@@ -22,10 +22,10 @@ void clcd_init(void){
 	plio->tim0 = 0x3f1f3cc4;
 	//plio->tim1 = 0x080b61df;
 	plio->tim1 = 0x080b6257;
-	plio->upbase = 0x60110000;
+	plio->upbase = PL111_RAMBASE;
 	/* 16-bit color */
 	plio->control = 0x192b;
-	fb = (uint32*)0x60110000;
+	fb = (uint32*)plio->upbase;
 	int x;
 	for (x = 0; x < (800 * 600); ++x)
 		fb[x] = 0;

@@ -1,8 +1,7 @@
 #ifndef __PL050_H__
 #define __PL050_H__
 
-#define KMI_KB_BASE 0x10006000
-
+#include "platform.h"
 
 typedef struct {
 	uint32_t cr;

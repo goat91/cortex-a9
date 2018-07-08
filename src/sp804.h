@@ -1,6 +1,8 @@
 #ifndef __SP804_H__
 #define __SP804_H__
 #include <stdint.h>
+#include "platform.h"
+
 /* Flags for the timer control registers  */
 #define SP804_TIMER_ENABLE       (1 << 7)
 #define SP804_TIMER_PERIODIC     (1 << 6)
@@ -11,7 +13,6 @@
 #define SP804_TIMER_32BIT        (1 << 1)
 #define SP804_TIMER_ONESHOT (1 << 0)
 
-#define TIMER_BASE 0x10011000
 typedef volatile struct {
     struct {
         uint32_t Load;     /* +0x00 */

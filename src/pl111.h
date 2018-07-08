@@ -1,11 +1,10 @@
 #ifndef __PL111_H__
 #define __PL111_H__
 #include "ugui.h"
-
+#include "platform.h"
 
 #define PL111_CR_EN		0x001
 #define PL111_CR_PWR		0x800
-#define PL111_IOBASE		0x10020000
 #define PL111_PALBASE		(PL111_IOBASE + 0x200)
 
 typedef unsigned int		uint32;

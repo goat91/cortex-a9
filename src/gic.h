@@ -37,6 +37,8 @@
 #ifndef __GIC_H__
 #define __GIC_H__
 #include <stdint.h>
+#include "platform.h"
+
 /* IO definitions (access restrictions to peripheral registers) */
 /**
 */
@@ -48,8 +50,6 @@
 #define     __O     volatile             /*!< Defines 'write only' permissions                */
 #define     __IO    volatile             /*!< Defines 'read / write' permissions              */
 
-#define GIC_INTERFACE 0x1e000100
-#define GIC_DISTRIBUTOR 0x1e001000
 /** \brief  Structure type to access the Generic Interrupt Controller Distributor (GICD)
  */
 typedef struct
