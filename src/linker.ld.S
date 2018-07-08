@@ -5,7 +5,7 @@ ENTRY(_Reset)
 /* Specify the memory areas */
 MEMORY
 {
-    RAM (xrw)       : ORIGIN = RAM_START, LENGTH = RAM_LEN
+    RAM (xrw)       : ORIGIN = KERNEL_START, LENGTH = KERNEL_MAX_SIZE
 
 }
 

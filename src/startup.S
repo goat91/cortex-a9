@@ -13,7 +13,7 @@ _Reset:
 	B c_fiq
 .text
 reset_handler:
-	ldr r0, =RAM_START
+	ldr r0, =KERNEL_START
 	mcr p15,0,r0,c12,c0,0
 	ldr sp,=stackSVC
 

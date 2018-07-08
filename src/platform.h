@@ -13,8 +13,7 @@
 
 #define TIMER_BASE 		0x1c110000
 
-#define RAM_START		0x80040000
-#define RAM_LEN			1024M
+#define RAM_START		0x80000000
 
 #else
 
@@ -30,9 +29,12 @@
 #define TIMER_BASE 		0x10011000
 
 #define RAM_START		0x60000000
-#define RAM_LEN			100M
 
 #endif
+
+#define KERNEL_MAX_SIZE			100M
+#define KERNEL_OFFSET			0x10000
+#define KERNEL_START			(RAM_START + KERNEL_OFFSET)
 
 
 #endif		//PLATFORM_CONFIG_INCLUDE_H
