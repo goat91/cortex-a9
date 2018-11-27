@@ -23,6 +23,8 @@ typedef struct _PL111MMIO{
 	uint32		volatile g;	//1c
 } PL111MMIO;
 
+extern uint32 volatile *fb;
+
 
 void clcd_init(void);
 

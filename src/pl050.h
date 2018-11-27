@@ -22,7 +22,7 @@ typedef struct {
 	
 } kmi_t;
 
-void kb_handler(void);
-void kb_init(void);
+void kmi0_init(void);
+void kmi1_init(void);
 
 #endif
